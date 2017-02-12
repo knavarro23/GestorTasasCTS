@@ -1,3 +1,6 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
 
 #Visual Studio files
 *.[Oo]bj
@@ -29,25 +32,30 @@ obj/
 [Rr]elease*/
 Ankh.NoLoad
 
+#MonoDevelop
+*.pidb
+*.userprefs
 
 #Tooling
 _ReSharper*/
 *.resharper
 [Tt]est[Rr]esult*
 
-
 #Project files
 [Bb]uild/
-#[Ll]og/
 
+#Subversion files
+.svn
 
-#Nuget
+# Office Temp Files
+~$*
+
+#NuGet
 packages/
+
+#ncrunch
+*ncrunch*
+*crunch*.local.xml
 
 # visual studio database projects
 *.dbmdl
-
-*.Publish.xml
-
-UpgradeLog.html
-UpgradeLog.htm

@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Configuration;
+using System.Data;
 using System.Windows.Forms;
+using MDIBFGestionTasas.Core;
 using MetroFramework.Forms;
 
 namespace MDIBFGestionTasas.Formularios
@@ -41,31 +42,34 @@ namespace MDIBFGestionTasas.Formularios
             }
             try
             {
-                //EntidadProyMDIBFGestionTasasDP.usuario _usuario = new EntidadProyMDIBFGestionTasasDP.usuario();
-                //_usuario.username = mtxtUsuario.Text.Trim();
-                //_usuario.password = mtxtClave.Text.Trim();
+                EntidadProyMDIBFGestionTasasDP.usuario _usuario = new EntidadProyMDIBFGestionTasasDP.usuario
+                {
+                    username = mtxtUsuario.Text.Trim(),
+                    password = mtxtClave.Text.Trim()
+                };
 
-                //DataTable dt = new DataTable();
-                //dt = m_usuario.BuscarUsuario(conexion, _usuario);
+                DataTable dt = new DataTable();
+                dt = m_usuario.BuscarUsuario(conexion, _usuario);
 
-                //string strTotal;
-                //strTotal = dt.Rows.Count.ToString();
+                string strTotal;
+                strTotal = dt.Rows.Count.ToString();
 
-                //if (Int32.Parse(strTotal) > 0)
-                //{
-                //    this.Hide();
-                //    FrmPrincipal varFrmPrincipal = new FrmPrincipal();
-                //    //varFrmPrincipal._usuario = _usuario.username;
-
-                //    varFrmPrincipal.Show();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Las credenciales ingresadas no se encuentran registradas.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    mtxtClave.Text = "";
-                //    mtxtClave.Focus();
-                //    return;
-                //}
+                if (Int32.Parse(strTotal) > 0)
+                {
+                    Hide();
+                    Constantes.NombreUsuario = _usuario.username;
+                    FrmInicio frmInicio = new FrmInicio();
+                    frmInicio.Show();
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("Las credenciales ingresadas no se encuentran registradas.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    mtxtClave.Text = "";
+                    mtxtClave.Focus();
+                    return;
+                }
+                Constantes.NombreUsuario = _usuario.username;
             }
             catch (Exception ex)
             {

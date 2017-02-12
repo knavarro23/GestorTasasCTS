@@ -1,6 +1,6 @@
 ﻿namespace MDIBFGestionTasas.Core
 {
-    public class ComboboxItem
+    public class ComboxItem
     {
         public string Text { get; set; }
         public object Value { get; set; }
