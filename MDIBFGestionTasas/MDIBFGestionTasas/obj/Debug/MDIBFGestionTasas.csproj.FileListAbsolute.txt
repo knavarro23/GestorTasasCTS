@@ -75,3 +75,37 @@ D:\PROYECTOS\06 BANCO FALABELLA\Gestión de Tasas - CTS\MDIBFGestionTasas\MDIBFG
 D:\PROYECTOS\06 BANCO FALABELLA\Gestión de Tasas - CTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.frmProcesoCargaDP.resources
 D:\PROYECTOS\06 BANCO FALABELLA\Gestión de Tasas - CTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.frmIngresoNetoCTS.resources
 D:\PROYECTOS\06 BANCO FALABELLA\Gestión de Tasas - CTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.frmSaldoenCuentaCTS.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\MetroFramework.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\Configuration.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\CsvHelper.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\EntidadProyMDIBFGestionTasas.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\MetroFramework.Design.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\MetroFramework.Fonts.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\NegocioProyMDIBFGestionTasas.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\DatosProyMDIBFGestionTasas.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\EntidadProyMDIBFGestionTasas.pdb
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\NegocioProyMDIBFGestionTasas.pdb
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\CsvHelper.xml
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\DatosProyMDIBFGestionTasas.pdb
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.csprojResolveAssemblyReference.cache
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.Formularios.FrmInicio.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.Formularios.FrmLogin.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.Formularios.FrmPrincipal.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.frmCargaStockBF.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.frmIngresoNetoCTS.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.frmProcesoCargaCTS.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.frmProcesoCargaDP.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.frmProductoCTS.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasasDP.frmLogin.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasasDP.frmPrincipal.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasasDP.frmProcesoCargaTotal.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasasDP.frmReporteCargaCTS.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasasDP.frmReporteCargaDP.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.frmSaldoenCuentaCTS.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.Properties.Resources.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.csproj.GenerateResource.Cache
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.exe
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.pdb
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\MDIBFGestionTasas.exe.config
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\MDIBFGestionTasas.exe
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\MDIBFGestionTasas.pdb

@@ -19,3 +19,10 @@ D:\PROYECTOS\06 BANCO FALABELLA\Gestión de Tasas - CTS\MDIBFGestionTasas\DatosP
 D:\PROYECTOS\06 BANCO FALABELLA\Gestión de Tasas - CTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\obj\Debug\DatosProyMDIBFGestionTasas.csprojResolveAssemblyReference.cache
 D:\PROYECTOS\06 BANCO FALABELLA\Gestión de Tasas - CTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\obj\Debug\DatosProyMDIBFGestionTasas.dll
 D:\PROYECTOS\06 BANCO FALABELLA\Gestión de Tasas - CTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\obj\Debug\DatosProyMDIBFGestionTasas.pdb
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\bin\Debug\DatosProyMDIBFGestionTasas.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\bin\Debug\DatosProyMDIBFGestionTasas.pdb
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\bin\Debug\EntidadProyMDIBFGestionTasas.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\bin\Debug\EntidadProyMDIBFGestionTasas.pdb
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\obj\Debug\DatosProyMDIBFGestionTasas.csprojResolveAssemblyReference.cache
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\obj\Debug\DatosProyMDIBFGestionTasas.dll
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\DatosProyMDIBFGestionTasas\obj\Debug\DatosProyMDIBFGestionTasas.pdb
