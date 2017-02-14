@@ -31,7 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProcesoCargaCTS));
             this.lblcts = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ptbDatosContacto = new System.Windows.Forms.PictureBox();
+            this.ptbMigracion = new System.Windows.Forms.PictureBox();
+            this.ptbAbonoDias = new System.Windows.Forms.PictureBox();
+            this.ptbAbonoQuinta = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.ptbCuentaSueldo = new System.Windows.Forms.PictureBox();
             this.btnProcesar = new System.Windows.Forms.Button();
             this.txtcuentasueldoCTS = new System.Windows.Forms.TextBox();
             this.txtdatoscontactoCTS = new System.Windows.Forms.TextBox();
@@ -63,13 +68,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblmensajeproceso = new System.Windows.Forms.Label();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.toolTipCuentaSueldo = new MetroFramework.Components.MetroToolTip();
-            this.ptbCuentaSueldo = new System.Windows.Forms.PictureBox();
+            this.toolTipGeneral = new MetroFramework.Components.MetroToolTip();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbDatosContacto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbMigracion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAbonoDias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAbonoQuinta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCuentaSueldo)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvprocesosCTS)).BeginInit();
             this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCuentaSueldo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblcts
@@ -85,6 +93,10 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.ptbDatosContacto);
+            this.panel1.Controls.Add(this.ptbMigracion);
+            this.panel1.Controls.Add(this.ptbAbonoDias);
+            this.panel1.Controls.Add(this.ptbAbonoQuinta);
             this.panel1.Controls.Add(this.progressBar1);
             this.panel1.Controls.Add(this.ptbCuentaSueldo);
             this.panel1.Controls.Add(this.btnProcesar);
@@ -108,6 +120,50 @@
             this.panel1.Size = new System.Drawing.Size(846, 227);
             this.panel1.TabIndex = 92;
             // 
+            // ptbDatosContacto
+            // 
+            this.ptbDatosContacto.Image = ((System.Drawing.Image)(resources.GetObject("ptbDatosContacto.Image")));
+            this.ptbDatosContacto.Location = new System.Drawing.Point(730, 150);
+            this.ptbDatosContacto.Name = "ptbDatosContacto";
+            this.ptbDatosContacto.Size = new System.Drawing.Size(20, 20);
+            this.ptbDatosContacto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbDatosContacto.TabIndex = 130;
+            this.ptbDatosContacto.TabStop = false;
+            this.ptbDatosContacto.Click += new System.EventHandler(this.ptbDatosContacto_Click);
+            // 
+            // ptbMigracion
+            // 
+            this.ptbMigracion.Image = ((System.Drawing.Image)(resources.GetObject("ptbMigracion.Image")));
+            this.ptbMigracion.Location = new System.Drawing.Point(730, 114);
+            this.ptbMigracion.Name = "ptbMigracion";
+            this.ptbMigracion.Size = new System.Drawing.Size(20, 20);
+            this.ptbMigracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbMigracion.TabIndex = 129;
+            this.ptbMigracion.TabStop = false;
+            this.ptbMigracion.Click += new System.EventHandler(this.ptbMigracion_Click);
+            // 
+            // ptbAbonoDias
+            // 
+            this.ptbAbonoDias.Image = ((System.Drawing.Image)(resources.GetObject("ptbAbonoDias.Image")));
+            this.ptbAbonoDias.Location = new System.Drawing.Point(730, 82);
+            this.ptbAbonoDias.Name = "ptbAbonoDias";
+            this.ptbAbonoDias.Size = new System.Drawing.Size(20, 20);
+            this.ptbAbonoDias.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbAbonoDias.TabIndex = 128;
+            this.ptbAbonoDias.TabStop = false;
+            this.ptbAbonoDias.Click += new System.EventHandler(this.ptbAbonoDias_Click);
+            // 
+            // ptbAbonoQuinta
+            // 
+            this.ptbAbonoQuinta.Image = ((System.Drawing.Image)(resources.GetObject("ptbAbonoQuinta.Image")));
+            this.ptbAbonoQuinta.Location = new System.Drawing.Point(730, 51);
+            this.ptbAbonoQuinta.Name = "ptbAbonoQuinta";
+            this.ptbAbonoQuinta.Size = new System.Drawing.Size(20, 20);
+            this.ptbAbonoQuinta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbAbonoQuinta.TabIndex = 127;
+            this.ptbAbonoQuinta.TabStop = false;
+            this.ptbAbonoQuinta.Click += new System.EventHandler(this.ptbAbonoQuinta_Click);
+            // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(143, 190);
@@ -115,6 +171,17 @@
             this.progressBar1.Size = new System.Drawing.Size(674, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 120;
+            // 
+            // ptbCuentaSueldo
+            // 
+            this.ptbCuentaSueldo.Image = ((System.Drawing.Image)(resources.GetObject("ptbCuentaSueldo.Image")));
+            this.ptbCuentaSueldo.Location = new System.Drawing.Point(730, 22);
+            this.ptbCuentaSueldo.Name = "ptbCuentaSueldo";
+            this.ptbCuentaSueldo.Size = new System.Drawing.Size(20, 20);
+            this.ptbCuentaSueldo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCuentaSueldo.TabIndex = 126;
+            this.ptbCuentaSueldo.TabStop = false;
+            this.ptbCuentaSueldo.Click += new System.EventHandler(this.ptbCuentaSueldo_Click);
             // 
             // btnProcesar
             // 
@@ -396,22 +463,11 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // toolTipCuentaSueldo
+            // toolTipGeneral
             // 
-            this.toolTipCuentaSueldo.Style = MetroFramework.MetroColorStyle.Blue;
-            this.toolTipCuentaSueldo.StyleManager = null;
-            this.toolTipCuentaSueldo.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
-            // ptbCuentaSueldo
-            // 
-            this.ptbCuentaSueldo.Image = ((System.Drawing.Image)(resources.GetObject("ptbCuentaSueldo.Image")));
-            this.ptbCuentaSueldo.Location = new System.Drawing.Point(730, 22);
-            this.ptbCuentaSueldo.Name = "ptbCuentaSueldo";
-            this.ptbCuentaSueldo.Size = new System.Drawing.Size(20, 20);
-            this.ptbCuentaSueldo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbCuentaSueldo.TabIndex = 126;
-            this.ptbCuentaSueldo.TabStop = false;
-            this.ptbCuentaSueldo.Click += new System.EventHandler(this.ptbCuentaSueldo_Click);
+            this.toolTipGeneral.Style = MetroFramework.MetroColorStyle.Blue;
+            this.toolTipGeneral.StyleManager = null;
+            this.toolTipGeneral.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // FrmProcesoCargaCTS
             // 
@@ -423,15 +479,18 @@
             this.Name = "FrmProcesoCargaCTS";
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Carga y Reporte CTS";
-            this.Load += new System.EventHandler(this.frmProcesoCargaCTS_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbDatosContacto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbMigracion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAbonoDias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAbonoQuinta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCuentaSueldo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvprocesosCTS)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCuentaSueldo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -472,7 +531,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblmensajeproceso;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private MetroFramework.Components.MetroToolTip toolTipCuentaSueldo;
+        private MetroFramework.Components.MetroToolTip toolTipGeneral;
         private System.Windows.Forms.PictureBox ptbCuentaSueldo;
+        private System.Windows.Forms.PictureBox ptbDatosContacto;
+        private System.Windows.Forms.PictureBox ptbMigracion;
+        private System.Windows.Forms.PictureBox ptbAbonoDias;
+        private System.Windows.Forms.PictureBox ptbAbonoQuinta;
     }
 }

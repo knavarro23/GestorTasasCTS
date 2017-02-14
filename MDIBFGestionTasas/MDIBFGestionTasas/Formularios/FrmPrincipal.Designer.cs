@@ -84,7 +84,7 @@
             this.toolStripSeparator1,
             this.salirToolStripMenuItem1});
             this.mnucargainicial.Name = "mnucargainicial";
-            this.mnucargainicial.Size = new System.Drawing.Size(101, 23);
+            this.mnucargainicial.Size = new System.Drawing.Size(101, 20);
             this.mnucargainicial.Text = "Mantenimiento";
             // 
             // mantenimientoToolStripMenuItem
@@ -130,7 +130,7 @@
             this.procesoDeCargaDPToolStripMenuItem,
             this.procesoDeCargaCTSToolStripMenuItem});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 23);
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.procesosToolStripMenuItem.Text = "Procesos";
             // 
             // procesoDeCargaStockBFToolStripMenuItem
@@ -167,7 +167,7 @@
             this.IsMdiContainer = true;
             this.Name = "FrmPrincipal";
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "GESTIÓN DE CTS y DP";
+            this.Text = "Tarifario CTS desde 01-04-2017";
             this.TransparencyKey = System.Drawing.Color.Empty;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPrincipal_FormClosed);

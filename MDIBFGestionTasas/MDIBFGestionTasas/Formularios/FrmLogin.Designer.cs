@@ -177,7 +177,7 @@
             this.Name = "FrmLogin";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "Ingreso Credenciales";
+            this.Text = "Gestión de Tasas DP y CTS";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.pnlCenter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
