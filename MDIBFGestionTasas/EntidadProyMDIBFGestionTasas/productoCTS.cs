@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntidadProyMDIBFGestionTasasDP
+namespace EntidadProyMDIBFGestionTasas
 {
     public class productoCTS
     {
@@ -17,6 +17,7 @@ namespace EntidadProyMDIBFGestionTasasDP
         private string _tipo;
         private string _tasasinpor;
         private string _clase;
+        private int _activo;
 
         public int productoCTSId
         {
@@ -62,6 +63,11 @@ namespace EntidadProyMDIBFGestionTasasDP
         {
             get { return _clase; }
             set { _clase = value; }
+        }
+        public int activo
+        {
+            get { return _activo; }
+            set { _activo = value; }
         }
     }
 }

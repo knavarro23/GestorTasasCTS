@@ -51,6 +51,10 @@
             this.ddlproducto = new System.Windows.Forms.ComboBox();
             this.ddltipoproducto = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.lblmensajeproceso = new System.Windows.Forms.Label();
+            this.bw1 = new System.ComponentModel.BackgroundWorker();
+            this.ofd1 = new System.Windows.Forms.OpenFileDialog();
             this.pnDP.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvprocesosCTS)).BeginInit();
@@ -69,6 +73,7 @@
             // pnDP
             // 
             this.pnDP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnDP.Controls.Add(this.btnLimpiar);
             this.pnDP.Controls.Add(this.progressBar1);
             this.pnDP.Controls.Add(this.btnProcesar);
             this.pnDP.Controls.Add(this.label1);
@@ -85,20 +90,21 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(143, 74);
+            this.progressBar1.Location = new System.Drawing.Point(304, 74);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(674, 23);
+            this.progressBar1.Size = new System.Drawing.Size(513, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 124;
             // 
             // btnProcesar
             // 
-            this.btnProcesar.Location = new System.Drawing.Point(13, 74);
+            this.btnProcesar.Location = new System.Drawing.Point(143, 74);
             this.btnProcesar.Name = "btnProcesar";
             this.btnProcesar.Size = new System.Drawing.Size(75, 23);
             this.btnProcesar.TabIndex = 123;
             this.btnProcesar.Text = "Procesar";
             this.btnProcesar.UseVisualStyleBackColor = true;
+            this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
             // 
             // label1
             // 
@@ -281,11 +287,35 @@
             this.label2.TabIndex = 129;
             this.label2.Text = "Tipo de producto:";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(223, 74);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 125;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // lblmensajeproceso
+            // 
+            this.lblmensajeproceso.AutoSize = true;
+            this.lblmensajeproceso.Location = new System.Drawing.Point(153, 162);
+            this.lblmensajeproceso.Name = "lblmensajeproceso";
+            this.lblmensajeproceso.Size = new System.Drawing.Size(0, 13);
+            this.lblmensajeproceso.TabIndex = 130;
+            // 
+            // bw1
+            // 
+            this.bw1.WorkerReportsProgress = true;
+            this.bw1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bw1_DoWork);
+            // 
             // frmProcesoCargaDP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 416);
+            this.Controls.Add(this.lblmensajeproceso);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblreporteDP);
@@ -330,5 +360,9 @@
         private System.Windows.Forms.Button btnExportar;
         private System.Windows.Forms.DataGridView gvprocesosCTS;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label lblmensajeproceso;
+        private System.ComponentModel.BackgroundWorker bw1;
+        private System.Windows.Forms.OpenFileDialog ofd1;
     }
 }

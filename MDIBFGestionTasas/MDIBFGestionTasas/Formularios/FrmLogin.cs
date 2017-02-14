@@ -48,26 +48,26 @@ namespace MDIBFGestionTasas.Formularios
                     password = mtxtClave.Text.Trim()
                 };
 
-                //DataTable dt = new DataTable();
-                //dt = m_usuario.BuscarUsuario(conexion, _usuario);
+                DataTable dt = new DataTable();
+                dt = m_usuario.BuscarUsuario(conexion, _usuario);
 
-                //string strTotal;
-                //strTotal = dt.Rows.Count.ToString();
+                string strTotal;
+                strTotal = dt.Rows.Count.ToString();
 
-                //if (Int32.Parse(strTotal) > 0)
-                //{
-                Hide();
-                Constantes.NombreUsuario = _usuario.username;
-                FrmInicio frmInicio = new FrmInicio();
-                frmInicio.Show();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Las credenciales ingresadas no se encuentran registradas.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    mtxtClave.Text = "";
-                //    mtxtClave.Focus();
-                //    return;
-                //}
+                if (Int32.Parse(strTotal) > 0)
+                {
+                    Hide();
+                    Constantes.NombreUsuario = _usuario.username;
+                    FrmInicio frmInicio = new FrmInicio();
+                    frmInicio.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Las credenciales ingresadas no se encuentran registradas.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    mtxtClave.Text = "";
+                    mtxtClave.Focus();
+                    return;
+                }
             }
             catch (Exception ex)
             {

@@ -10,5 +10,9 @@ namespace NegocioProyMDIBFGestionTasasDP
         {
             return mtipoproductoCTS.ListarTipoProductoCTS(CadenaConexion);
         }
+        public DataTable ListarMonedaCTS(string CadenaConexion)
+        {
+            return mtipoproductoCTS.ListarMonedaCTS(CadenaConexion);
+        }
     }
 }

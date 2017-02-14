@@ -23,5 +23,23 @@ namespace DatosProyMDIBFGestionTasasDP
 
             return ds.Tables["TIPOPRODUCTOCTS"];
         }
+
+        public DataTable ListarMonedaCTS(string CadenaConexion)
+        {
+            SqlConnection cnn = new SqlConnection();
+            cnn.ConnectionString = CadenaConexion;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cnn;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "MDIBF_TipoMonedaCTS_Listar";
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            cnn.Open();
+            da.Fill(ds, "MONEDACTS");
+            cnn.Close();
+
+            return ds.Tables["MONEDACTS"];
+        }
     }
 }
