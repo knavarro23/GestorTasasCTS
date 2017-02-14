@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MDIBFGestionTasas;
+using FrmProcesoCargaCTS = MDIBFGestionTasas.Formularios.FrmProcesoCargaCTS;
+using FrmProcesoCargaDP = MDIBFGestionTasas.Formularios.FrmProcesoCargaDP;
+using FrmCargaStockBF = MDIBFGestionTasas.Formularios.FrmCargaStockBF;
+using FrmIngresoNetoCTS = MDIBFGestionTasas.Formularios.FrmIngresoNetoCTS;
+using FrmProductoCTS = MDIBFGestionTasas.Formularios.FrmProductoCTS;
 
 namespace MDIBFGestionTasasDP
 {

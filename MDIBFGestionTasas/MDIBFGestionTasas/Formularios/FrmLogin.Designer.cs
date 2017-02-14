@@ -50,7 +50,7 @@
             this.pnlCenter.HorizontalScrollbarBarColor = true;
             this.pnlCenter.HorizontalScrollbarHighlightOnWheel = false;
             this.pnlCenter.HorizontalScrollbarSize = 10;
-            this.pnlCenter.Location = new System.Drawing.Point(2, 63);
+            this.pnlCenter.Location = new System.Drawing.Point(2, 83);
             this.pnlCenter.Name = "pnlCenter";
             this.pnlCenter.Size = new System.Drawing.Size(635, 169);
             this.pnlCenter.TabIndex = 403;
@@ -61,7 +61,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(422, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(391, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(171, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,7 +71,7 @@
             // mbtnCancelar
             // 
             this.mbtnCancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbtnCancelar.Location = new System.Drawing.Point(263, 111);
+            this.mbtnCancelar.Location = new System.Drawing.Point(232, 111);
             this.mbtnCancelar.Name = "mbtnCancelar";
             this.mbtnCancelar.Size = new System.Drawing.Size(111, 28);
             this.mbtnCancelar.TabIndex = 4;
@@ -82,7 +82,7 @@
             // mbtnEntrar
             // 
             this.mbtnEntrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbtnEntrar.Location = new System.Drawing.Point(134, 111);
+            this.mbtnEntrar.Location = new System.Drawing.Point(103, 111);
             this.mbtnEntrar.Name = "mbtnEntrar";
             this.mbtnEntrar.Size = new System.Drawing.Size(111, 28);
             this.mbtnEntrar.TabIndex = 3;
@@ -108,7 +108,7 @@
             this.mtxtClave.DisplayIcon = true;
             this.mtxtClave.Icon = ((System.Drawing.Image)(resources.GetObject("mtxtClave.Icon")));
             this.mtxtClave.Lines = new string[0];
-            this.mtxtClave.Location = new System.Drawing.Point(117, 66);
+            this.mtxtClave.Location = new System.Drawing.Point(86, 66);
             this.mtxtClave.MaxLength = 32767;
             this.mtxtClave.Name = "mtxtClave";
             this.mtxtClave.PasswordChar = '●';
@@ -127,6 +127,7 @@
             this.mtxtClave.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.mtxtClave.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.mtxtClave.Click += new System.EventHandler(this.mtxtClave_Enter);
+            this.mtxtClave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtxtClave_KeyPress);
             // 
             // mtxtUsuario
             // 
@@ -147,7 +148,7 @@
             this.mtxtUsuario.DisplayIcon = true;
             this.mtxtUsuario.Icon = ((System.Drawing.Image)(resources.GetObject("mtxtUsuario.Icon")));
             this.mtxtUsuario.Lines = new string[0];
-            this.mtxtUsuario.Location = new System.Drawing.Point(117, 32);
+            this.mtxtUsuario.Location = new System.Drawing.Point(86, 32);
             this.mtxtUsuario.MaxLength = 32767;
             this.mtxtUsuario.Name = "mtxtUsuario";
             this.mtxtUsuario.PasswordChar = '\0';
@@ -171,9 +172,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 295);
             this.Controls.Add(this.pnlCenter);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmLogin";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Ingreso Credenciales";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.pnlCenter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

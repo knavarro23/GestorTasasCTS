@@ -59,5 +59,6 @@ packages/
 
 # visual studio database projects
 *.dbmdl
-bin/Debug/
 MDIBFGestionTasas/DatosProyMDIBFGestionTasas/bin/Debug/
+MDIBFGestionTasas/MDIBFGestionTasas/obj/
+MDIBFGestionTasas/MDIBFGestionTasas/obj/Debug/

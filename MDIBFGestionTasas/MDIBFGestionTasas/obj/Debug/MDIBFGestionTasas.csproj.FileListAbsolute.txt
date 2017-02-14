@@ -109,3 +109,8 @@ F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTa
 F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\MDIBFGestionTasas.exe.config
 F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\MDIBFGestionTasas.exe
 F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\bin\Debug\MDIBFGestionTasas.pdb
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.Formularios.FrmCargaStockBF.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.Formularios.FrmIngresoNetoCTS.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.Formularios.FrmProcesoCargaCTS.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.Formularios.FrmProcesoCargaDP.resources
+F:\Proyectos\Proyectos Falabella\GestorTasasCTS\MDIBFGestionTasas\MDIBFGestionTasas\obj\Debug\MDIBFGestionTasas.Formularios.FrmProductoCTS.resources

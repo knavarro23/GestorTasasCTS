@@ -31,13 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.mnucargainicial = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoIngresoNetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoSaldoNetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesoDeCargaStockBFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,18 +51,18 @@
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
+            this.toolUsuario});
             this.statusStrip.Location = new System.Drawing.Point(20, 411);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(592, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
-            // toolStripStatusLabel
+            // toolUsuario
             // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel.Text = "Estado";
+            this.toolUsuario.Name = "toolUsuario";
+            this.toolUsuario.Size = new System.Drawing.Size(42, 17);
+            this.toolUsuario.Text = "Estado";
             // 
             // menuStrip
             // 
@@ -80,9 +81,10 @@
             this.mantenimientoToolStripMenuItem,
             this.mantenimientoIngresoNetoToolStripMenuItem,
             this.mantenimientoSaldoNetoToolStripMenuItem,
+            this.toolStripSeparator1,
             this.salirToolStripMenuItem1});
             this.mnucargainicial.Name = "mnucargainicial";
-            this.mnucargainicial.Size = new System.Drawing.Size(101, 20);
+            this.mnucargainicial.Size = new System.Drawing.Size(101, 23);
             this.mnucargainicial.Text = "Mantenimiento";
             // 
             // mantenimientoToolStripMenuItem
@@ -99,6 +101,7 @@
             this.mantenimientoIngresoNetoToolStripMenuItem.Name = "mantenimientoIngresoNetoToolStripMenuItem";
             this.mantenimientoIngresoNetoToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.mantenimientoIngresoNetoToolStripMenuItem.Text = "Mantenimiento Ingreso Neto CTS";
+            this.mantenimientoIngresoNetoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoIngresoNetoToolStripMenuItem_Click);
             // 
             // mantenimientoSaldoNetoToolStripMenuItem
             // 
@@ -107,12 +110,18 @@
             this.mantenimientoSaldoNetoToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.mantenimientoSaldoNetoToolStripMenuItem.Text = "Mantenimiento Saldo en Cuenta CTS";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(266, 6);
+            // 
             // salirToolStripMenuItem1
             // 
             this.salirToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("salirToolStripMenuItem1.Image")));
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
             this.salirToolStripMenuItem1.Size = new System.Drawing.Size(269, 22);
             this.salirToolStripMenuItem1.Text = "Salir";
+            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
             // procesosToolStripMenuItem
             // 
@@ -121,7 +130,7 @@
             this.procesoDeCargaDPToolStripMenuItem,
             this.procesoDeCargaCTSToolStripMenuItem});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 23);
             this.procesosToolStripMenuItem.Text = "Procesos";
             // 
             // procesoDeCargaStockBFToolStripMenuItem
@@ -130,6 +139,7 @@
             this.procesoDeCargaStockBFToolStripMenuItem.Name = "procesoDeCargaStockBFToolStripMenuItem";
             this.procesoDeCargaStockBFToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.procesoDeCargaStockBFToolStripMenuItem.Text = "Proceso de Carga Stock BF";
+            this.procesoDeCargaStockBFToolStripMenuItem.Click += new System.EventHandler(this.procesoDeCargaStockBFToolStripMenuItem_Click);
             // 
             // procesoDeCargaDPToolStripMenuItem
             // 
@@ -137,6 +147,7 @@
             this.procesoDeCargaDPToolStripMenuItem.Name = "procesoDeCargaDPToolStripMenuItem";
             this.procesoDeCargaDPToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.procesoDeCargaDPToolStripMenuItem.Text = "Proceso de Carga DP";
+            this.procesoDeCargaDPToolStripMenuItem.Click += new System.EventHandler(this.procesoDeCargaDPToolStripMenuItem_Click);
             // 
             // procesoDeCargaCTSToolStripMenuItem
             // 
@@ -144,6 +155,7 @@
             this.procesoDeCargaCTSToolStripMenuItem.Name = "procesoDeCargaCTSToolStripMenuItem";
             this.procesoDeCargaCTSToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.procesoDeCargaCTSToolStripMenuItem.Text = "Proceso de Carga CTS";
+            this.procesoDeCargaCTSToolStripMenuItem.Click += new System.EventHandler(this.procesoDeCargaCTSToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -157,6 +169,9 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "GESTIÓN DE CTS y DP";
             this.TransparencyKey = System.Drawing.Color.Empty;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPrincipal_FormClosed);
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.menuStrip.ResumeLayout(false);
@@ -168,7 +183,7 @@
         #endregion
 
         private System.Windows.Forms.StatusStrip statusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel toolUsuario;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem mnucargainicial;
@@ -180,6 +195,7 @@
         private System.Windows.Forms.ToolStripMenuItem procesoDeCargaStockBFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procesoDeCargaDPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procesoDeCargaCTSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

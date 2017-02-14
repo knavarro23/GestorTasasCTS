@@ -87,6 +87,18 @@
   <ItemGroup>
     <Compile Include="Core\ComboxItem.cs" />
     <Compile Include="Core\Constantes.cs" />
+    <Compile Include="Formularios\FrmCargaStockBF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCargaStockBF.Designer.cs">
+      <DependentUpon>FrmCargaStockBF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmIngresoNetoCTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmIngresoNetoCTS.Designer.cs">
+      <DependentUpon>FrmIngresoNetoCTS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,24 @@
     </Compile>
     <Compile Include="Formularios\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmProcesoCargaCTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmProcesoCargaCTS.Designer.cs">
+      <DependentUpon>FrmProcesoCargaCTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmProcesoCargaDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmProcesoCargaDP.Designer.cs">
+      <DependentUpon>FrmProcesoCargaDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmProductoCTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmProductoCTS.Designer.cs">
+      <DependentUpon>FrmProductoCTS.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCargaStockBF.cs">
       <SubType>Form</SubType>
@@ -174,6 +204,12 @@
     <Compile Include="modelos\clsfrmBases.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FrmCargaStockBF.resx">
+      <DependentUpon>FrmCargaStockBF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmIngresoNetoCTS.resx">
+      <DependentUpon>FrmIngresoNetoCTS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +218,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmProcesoCargaCTS.resx">
+      <DependentUpon>FrmProcesoCargaCTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmProcesoCargaDP.resx">
+      <DependentUpon>FrmProcesoCargaDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmProductoCTS.resx">
+      <DependentUpon>FrmProductoCTS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCargaStockBF.resx">
       <DependentUpon>frmCargaStockBF.cs</DependentUpon>
@@ -244,6 +289,7 @@
     <Content Include="Resources\deposito-cts.jpg" />
     <None Include="Resources\DP.jpg" />
     <Content Include="Resources\DP.png" />
+    <Content Include="Resources\help.png" />
     <Content Include="Resources\icono_banco.jpg" />
     <Content Include="Resources\icono_estadistico.jpg" />
     <None Include="Resources\imagendinero.jpg" />
