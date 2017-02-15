@@ -1,6 +1,4 @@
 ﻿using System;
-using MDIBFGestionTasas.Core;
-using MDIBFGestionTasasDP;
 using MetroFramework.Forms;
 using System.Windows.Forms;
 
@@ -23,7 +21,7 @@ namespace MDIBFGestionTasas.Formularios
         private void btnTarifario1_Click(object sender, EventArgs e)
         {
             Hide();
-            frmPrincipal frmPrincipal = new frmPrincipal {_usuario = Constantes.NombreUsuario};
+            frmPrincipal frmPrincipal = new frmPrincipal();
             frmPrincipal.Show();
         }
 

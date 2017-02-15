@@ -135,41 +135,11 @@
     <Compile Include="Formularios\FrmProductoCTS.Designer.cs">
       <DependentUpon>FrmProductoCTS.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCargaStockBF.cs">
+    <Compile Include="Formularios\FrmSaldoenCuentaCTS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCargaStockBF.Designer.cs">
-      <DependentUpon>frmCargaStockBF.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmIngresoNetoCTS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmIngresoNetoCTS.Designer.cs">
-      <DependentUpon>frmIngresoNetoCTS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmProcesoCargaCTS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmProcesoCargaCTS.Designer.cs">
-      <DependentUpon>frmProcesoCargaCTS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmProcesoCargaDP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmProcesoCargaDP.Designer.cs">
-      <DependentUpon>frmProcesoCargaDP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmProductoCTS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmProductoCTS.Designer.cs">
-      <DependentUpon>frmProductoCTS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="Formularios\FrmSaldoenCuentaCTS.Designer.cs">
+      <DependentUpon>FrmSaldoenCuentaCTS.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -194,12 +164,6 @@
     </Compile>
     <Compile Include="Formularios anteriores\frmReporteCargaDP.Designer.cs">
       <DependentUpon>frmReporteCargaDP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSaldoenCuentaCTS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSaldoenCuentaCTS.Designer.cs">
-      <DependentUpon>frmSaldoenCuentaCTS.cs</DependentUpon>
     </Compile>
     <Compile Include="modelos\clsfrmBases.cs" />
     <Compile Include="Program.cs" />
@@ -228,23 +192,8 @@
     <EmbeddedResource Include="Formularios\FrmProductoCTS.resx">
       <DependentUpon>FrmProductoCTS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCargaStockBF.resx">
-      <DependentUpon>frmCargaStockBF.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmIngresoNetoCTS.resx">
-      <DependentUpon>frmIngresoNetoCTS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmProcesoCargaCTS.resx">
-      <DependentUpon>frmProcesoCargaCTS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmProcesoCargaDP.resx">
-      <DependentUpon>frmProcesoCargaDP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmProductoCTS.resx">
-      <DependentUpon>frmProductoCTS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmSaldoenCuentaCTS.resx">
+      <DependentUpon>FrmSaldoenCuentaCTS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
@@ -257,9 +206,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios anteriores\frmReporteCargaDP.resx">
       <DependentUpon>frmReporteCargaDP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSaldoenCuentaCTS.resx">
-      <DependentUpon>frmSaldoenCuentaCTS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

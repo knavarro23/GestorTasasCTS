@@ -59,7 +59,7 @@
             this.pntotal.Controls.Add(this.txtproceso);
             this.pntotal.Controls.Add(this.lblproceso);
             this.pntotal.Controls.Add(this.btnAgregar);
-            this.pntotal.Location = new System.Drawing.Point(17, 16);
+            this.pntotal.Location = new System.Drawing.Point(17, 46);
             this.pntotal.Name = "pntotal";
             this.pntotal.Size = new System.Drawing.Size(820, 46);
             this.pntotal.TabIndex = 92;
@@ -97,7 +97,7 @@
             this.lblfechacarga23.AutoSize = true;
             this.lblfechacarga23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblfechacarga23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfechacarga23.Location = new System.Drawing.Point(684, -22);
+            this.lblfechacarga23.Location = new System.Drawing.Point(677, 15);
             this.lblfechacarga23.Name = "lblfechacarga23";
             this.lblfechacarga23.Size = new System.Drawing.Size(2, 15);
             this.lblfechacarga23.TabIndex = 91;
@@ -105,7 +105,7 @@
             // lblfechacarga
             // 
             this.lblfechacarga.AutoSize = true;
-            this.lblfechacarga.Location = new System.Drawing.Point(593, -23);
+            this.lblfechacarga.Location = new System.Drawing.Point(586, 15);
             this.lblfechacarga.Name = "lblfechacarga";
             this.lblfechacarga.Size = new System.Drawing.Size(74, 13);
             this.lblfechacarga.TabIndex = 90;
@@ -116,7 +116,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txttipocambio);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(17, 97);
+            this.panel1.Location = new System.Drawing.Point(17, 127);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(820, 46);
             this.panel1.TabIndex = 93;
@@ -142,7 +142,7 @@
             // 
             // btnProcesar
             // 
-            this.btnProcesar.Location = new System.Drawing.Point(592, 164);
+            this.btnProcesar.Location = new System.Drawing.Point(592, 194);
             this.btnProcesar.Name = "btnProcesar";
             this.btnProcesar.Size = new System.Drawing.Size(75, 23);
             this.btnProcesar.TabIndex = 94;
@@ -152,7 +152,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(762, 164);
+            this.btnSalir.Location = new System.Drawing.Point(762, 194);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 95;
@@ -163,7 +163,7 @@
             // gvlistado
             // 
             this.gvlistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvlistado.Location = new System.Drawing.Point(17, 267);
+            this.gvlistado.Location = new System.Drawing.Point(17, 297);
             this.gvlistado.MultiSelect = false;
             this.gvlistado.Name = "gvlistado";
             this.gvlistado.ReadOnly = true;
@@ -174,7 +174,7 @@
             // 
             this.lbllog.AutoSize = true;
             this.lbllog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllog.Location = new System.Drawing.Point(19, 239);
+            this.lbllog.Location = new System.Drawing.Point(19, 269);
             this.lbllog.Name = "lbllog";
             this.lbllog.Size = new System.Drawing.Size(88, 13);
             this.lbllog.TabIndex = 98;
@@ -182,7 +182,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(673, 164);
+            this.btnLimpiar.Location = new System.Drawing.Point(673, 194);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(83, 23);
             this.btnLimpiar.TabIndex = 96;
@@ -192,7 +192,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(17, 202);
+            this.progressBar1.Location = new System.Drawing.Point(17, 232);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(820, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -229,7 +229,7 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(14, 63);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(855, 405);
+            this.metroPanel1.Size = new System.Drawing.Size(855, 422);
             this.metroPanel1.TabIndex = 101;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -243,6 +243,7 @@
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.lblmensajeproceso);
             this.Name = "FrmCargaStockBF";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Carga Stock BF";
             this.Load += new System.EventHandler(this.frmCargaStockBF_Load);

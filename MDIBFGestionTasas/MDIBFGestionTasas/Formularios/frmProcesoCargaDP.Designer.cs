@@ -30,6 +30,7 @@
         {
             this.lbldp = new System.Windows.Forms.Label();
             this.pnDP = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnProcesar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.lblcuentasueldo = new System.Windows.Forms.Label();
             this.btnCuentaSueldoDP = new System.Windows.Forms.Button();
             this.lblreporteDP = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.chktotal = new System.Windows.Forms.CheckBox();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -50,18 +52,19 @@
             this.ddlproducto = new System.Windows.Forms.ComboBox();
             this.ddltipoproducto = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.lblmensajeproceso = new System.Windows.Forms.Label();
+            this.bw1 = new System.ComponentModel.BackgroundWorker();
+            this.ofd1 = new System.Windows.Forms.OpenFileDialog();
             this.pnDP.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvprocesosCTS)).BeginInit();
-            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbldp
             // 
             this.lbldp.AutoSize = true;
             this.lbldp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldp.Location = new System.Drawing.Point(15, 15);
+            this.lbldp.Location = new System.Drawing.Point(19, 75);
             this.lbldp.Name = "lbldp";
             this.lbldp.Size = new System.Drawing.Size(188, 13);
             this.lbldp.TabIndex = 94;
@@ -70,6 +73,7 @@
             // pnDP
             // 
             this.pnDP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnDP.Controls.Add(this.btnLimpiar);
             this.pnDP.Controls.Add(this.progressBar1);
             this.pnDP.Controls.Add(this.btnProcesar);
             this.pnDP.Controls.Add(this.label1);
@@ -79,27 +83,38 @@
             this.pnDP.Controls.Add(this.txtCuentaSueldoDP);
             this.pnDP.Controls.Add(this.lblcuentasueldo);
             this.pnDP.Controls.Add(this.btnCuentaSueldoDP);
-            this.pnDP.Location = new System.Drawing.Point(15, 44);
+            this.pnDP.Location = new System.Drawing.Point(19, 104);
             this.pnDP.Name = "pnDP";
             this.pnDP.Size = new System.Drawing.Size(831, 110);
             this.pnDP.TabIndex = 95;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(223, 74);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 125;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(143, 74);
+            this.progressBar1.Location = new System.Drawing.Point(304, 74);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(674, 23);
+            this.progressBar1.Size = new System.Drawing.Size(513, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 124;
             // 
             // btnProcesar
             // 
-            this.btnProcesar.Location = new System.Drawing.Point(13, 74);
+            this.btnProcesar.Location = new System.Drawing.Point(143, 74);
             this.btnProcesar.Name = "btnProcesar";
             this.btnProcesar.Size = new System.Drawing.Size(75, 23);
             this.btnProcesar.TabIndex = 123;
             this.btnProcesar.Text = "Procesar";
             this.btnProcesar.UseVisualStyleBackColor = true;
+            this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
             // 
             // label1
             // 
@@ -166,11 +181,20 @@
             // 
             this.lblreporteDP.AutoSize = true;
             this.lblreporteDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblreporteDP.Location = new System.Drawing.Point(15, 168);
+            this.lblreporteDP.Location = new System.Drawing.Point(19, 228);
             this.lblreporteDP.Name = "lblreporteDP";
             this.lblreporteDP.Size = new System.Drawing.Size(73, 13);
             this.lblreporteDP.TabIndex = 123;
             this.lblreporteDP.Text = "Reporte DP";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(261, 292);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(95, 23);
+            this.btnBuscar.TabIndex = 124;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -184,7 +208,7 @@
             this.panel2.Controls.Add(this.ddlproducto);
             this.panel2.Controls.Add(this.ddltipoproducto);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(15, 195);
+            this.panel2.Location = new System.Drawing.Point(19, 255);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(831, 216);
             this.panel2.TabIndex = 129;
@@ -273,30 +297,32 @@
             this.label2.TabIndex = 129;
             this.label2.Text = "Tipo de producto:";
             // 
-            // metroPanel1
+            // lblmensajeproceso
             // 
-            this.metroPanel1.Controls.Add(this.panel2);
-            this.metroPanel1.Controls.Add(this.lbldp);
-            this.metroPanel1.Controls.Add(this.lblreporteDP);
-            this.metroPanel1.Controls.Add(this.pnDP);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(14, 63);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(865, 432);
-            this.metroPanel1.TabIndex = 130;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.lblmensajeproceso.AutoSize = true;
+            this.lblmensajeproceso.Location = new System.Drawing.Point(160, 228);
+            this.lblmensajeproceso.Name = "lblmensajeproceso";
+            this.lblmensajeproceso.Size = new System.Drawing.Size(0, 13);
+            this.lblmensajeproceso.TabIndex = 130;
+            // 
+            // bw1
+            // 
+            this.bw1.WorkerReportsProgress = true;
+            this.bw1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bw1_DoWork);
             // 
             // FrmProcesoCargaDP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 534);
-            this.Controls.Add(this.metroPanel1);
+            this.ClientSize = new System.Drawing.Size(861, 487);
+            this.Controls.Add(this.lblmensajeproceso);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.lblreporteDP);
+            this.Controls.Add(this.pnDP);
+            this.Controls.Add(this.lbldp);
             this.Name = "FrmProcesoCargaDP";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Carga y Reporte DP";
             this.pnDP.ResumeLayout(false);
@@ -304,9 +330,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvprocesosCTS)).EndInit();
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -324,6 +349,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button btnProcesar;
         private System.Windows.Forms.Label lblreporteDP;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblproducto;
         private System.Windows.Forms.ComboBox ddlproducto;
@@ -334,6 +360,9 @@
         private System.Windows.Forms.Button btnExportar;
         private System.Windows.Forms.DataGridView gvprocesosCTS;
         private System.Windows.Forms.Button button1;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label lblmensajeproceso;
+        private System.ComponentModel.BackgroundWorker bw1;
+        private System.Windows.Forms.OpenFileDialog ofd1;
     }
 }

@@ -1,32 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MDIBFGestionTasas;
-using FrmProcesoCargaCTS = MDIBFGestionTasas.Formularios.FrmProcesoCargaCTS;
-using FrmProcesoCargaDP = MDIBFGestionTasas.Formularios.FrmProcesoCargaDP;
-using FrmCargaStockBF = MDIBFGestionTasas.Formularios.FrmCargaStockBF;
-using FrmIngresoNetoCTS = MDIBFGestionTasas.Formularios.FrmIngresoNetoCTS;
-using FrmProductoCTS = MDIBFGestionTasas.Formularios.FrmProductoCTS;
+using MDIBFGestionTasas.Formularios;
+using MetroFramework.Forms;
 
-namespace MDIBFGestionTasasDP
+namespace MDIBFGestionTasas
 {
-    public partial class frmPrincipal : Form
+    public partial class frmPrincipal : MetroForm
     {
-        frmCargaStockBF varfrmCargaStockBF;
-        frmProcesoCargaDP varfrmProcesoCargaDP;
-        frmProcesoCargaCTS varfrmProcesoCargaCTS;
-        frmProductoCTS varfrmProductoCTS;
-        frmIngresoNetoCTS varfrmIngresoNetoCTS;
-        frmSaldoenCuentaCTS varfrmSaldoenCuentaCTS;
+        FrmCargaStockBF _frmCargaStockBf;
+        FrmProcesoCargaDP _frmProcesoCargaDp;
+        FrmProcesoCargaCTS _frmProcesoCargaCts;
+        FrmProductoCTS _frmProductoCts;
+        FrmIngresoNetoCTS _frmIngresoNetoCts;
+        FrmSaldoenCuentaCTS _frmSaldoenCuentaCts;
 
-
-        public string _usuario;
         public frmPrincipal()
         {
             InitializeComponent();
@@ -39,85 +26,79 @@ namespace MDIBFGestionTasasDP
 
         private void procesoDeCargaStockBFToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (varfrmCargaStockBF == null || varfrmCargaStockBF.IsDisposed)
+            if (_frmCargaStockBf == null || _frmCargaStockBf.IsDisposed)
             {
-                varfrmCargaStockBF = new frmCargaStockBF(_usuario);
-                varfrmCargaStockBF.MdiParent = this;
-                varfrmCargaStockBF.Show();
+                _frmCargaStockBf = new FrmCargaStockBF { MdiParent = this };
+                _frmCargaStockBf.Show();
             }
             else
             {
-                varfrmCargaStockBF.BringToFront();
+                _frmCargaStockBf.BringToFront();
             }
         }
 
         private void procesoDeCargaDPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (varfrmProcesoCargaDP == null || varfrmProcesoCargaDP.IsDisposed)
+            if (_frmProcesoCargaDp == null || _frmProcesoCargaDp.IsDisposed)
             {
-                varfrmProcesoCargaDP = new frmProcesoCargaDP(_usuario);
-                varfrmProcesoCargaDP.MdiParent = this;
-                varfrmProcesoCargaDP.Show();
+                _frmProcesoCargaDp = new FrmProcesoCargaDP { MdiParent = this };
+                _frmProcesoCargaDp.Show();
             }
             else
             {
-                varfrmProcesoCargaDP.BringToFront();
+                _frmProcesoCargaDp.BringToFront();
             }
         }
 
         private void procesoDeCargaCTSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (varfrmProcesoCargaCTS == null || varfrmProcesoCargaCTS.IsDisposed)
+            if (_frmProcesoCargaCts == null || _frmProcesoCargaCts.IsDisposed)
             {
-                varfrmProcesoCargaCTS = new frmProcesoCargaCTS(_usuario);
-                varfrmProcesoCargaCTS.MdiParent = this;
-                varfrmProcesoCargaCTS.Show();
+                _frmProcesoCargaCts = new FrmProcesoCargaCTS { MdiParent = this };
+                _frmProcesoCargaCts.Show();
             }
             else
             {
-                varfrmProcesoCargaCTS.BringToFront();
+                _frmProcesoCargaCts.BringToFront();
             }
         }
 
         private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (varfrmProductoCTS == null || varfrmProductoCTS.IsDisposed)
+            if (_frmProductoCts == null || _frmProductoCts.IsDisposed)
             {
-                varfrmProductoCTS = new frmProductoCTS(_usuario);
-                varfrmProductoCTS.MdiParent = this;
-                varfrmProductoCTS.Show();
+                _frmProductoCts = new FrmProductoCTS { MdiParent = this };
+                _frmProductoCts.Show();
             }
             else
             {
-                varfrmProductoCTS.BringToFront();
+                _frmProductoCts.BringToFront();
             }
         }
 
         private void mantenimientoIngresoNetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (varfrmIngresoNetoCTS == null || varfrmIngresoNetoCTS.IsDisposed)
+            if (_frmIngresoNetoCts == null || _frmIngresoNetoCts.IsDisposed)
             {
-                varfrmIngresoNetoCTS = new frmIngresoNetoCTS(_usuario);
-                varfrmIngresoNetoCTS.MdiParent = this;
-                varfrmIngresoNetoCTS.Show();
+                _frmIngresoNetoCts = new FrmIngresoNetoCTS { MdiParent = this };
+                _frmIngresoNetoCts.Show();
             }
             else
             {
-                varfrmIngresoNetoCTS.BringToFront();
+                _frmIngresoNetoCts.BringToFront();
             }
         }
 
         private void mantenimientoSaldoNetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (varfrmSaldoenCuentaCTS == null || varfrmSaldoenCuentaCTS.IsDisposed)
+            if (_frmSaldoenCuentaCts == null || _frmSaldoenCuentaCts.IsDisposed)
             {
-                varfrmSaldoenCuentaCTS = new frmSaldoenCuentaCTS(_usuario);
-                varfrmSaldoenCuentaCTS.MdiParent = this;
-                varfrmSaldoenCuentaCTS.Show();
+                _frmSaldoenCuentaCts = new FrmSaldoenCuentaCTS { MdiParent = this };
+                _frmSaldoenCuentaCts.Show();
             }
             else
             {
-                varfrmSaldoenCuentaCTS.BringToFront();
+                _frmSaldoenCuentaCts.BringToFront();
             }
         }    
     }

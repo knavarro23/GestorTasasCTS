@@ -109,6 +109,7 @@
             this.mantenimientoSaldoNetoToolStripMenuItem.Name = "mantenimientoSaldoNetoToolStripMenuItem";
             this.mantenimientoSaldoNetoToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.mantenimientoSaldoNetoToolStripMenuItem.Text = "Mantenimiento Saldo en Cuenta CTS";
+            this.mantenimientoSaldoNetoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoSaldoNetoToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 

@@ -1,6 +1,6 @@
-﻿namespace MDIBFGestionTasas
+﻿namespace MDIBFGestionTasas.Formularios
 {
-    partial class frmSaldoenCuentaCTS
+    partial class FrmSaldoenCuentaCTS
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // frmSaldoenCuentaCTS
+            // FrmSaldoenCuentaCTS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 261);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "frmSaldoenCuentaCTS";
+            this.Name = "FrmSaldoenCuentaCTS";
+            this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Mantenimiento Saldo en Cuenta CTS";
             this.ResumeLayout(false);
 

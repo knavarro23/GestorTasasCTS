@@ -12,6 +12,7 @@ namespace MDIBFGestionTasas.Formularios
         private FrmCargaStockBF _frmCargaStockBf;
         private FrmProcesoCargaDP _frmProcesoCargaDp;
         private FrmProcesoCargaCTS _frmProcesoCargaCts;
+        private FrmSaldoenCuentaCTS _frmSaldoenCuentaCts;
 
         public FrmPrincipal()
         {
@@ -96,6 +97,19 @@ namespace MDIBFGestionTasas.Formularios
         private void FrmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void mantenimientoSaldoNetoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_frmSaldoenCuentaCts == null || _frmSaldoenCuentaCts.IsDisposed)
+            {
+                _frmSaldoenCuentaCts = new FrmSaldoenCuentaCTS {MdiParent = this};
+                _frmSaldoenCuentaCts.Show();
+            }
+            else
+            {
+                _frmSaldoenCuentaCts.BringToFront();
+            }
         }
     }
 }
