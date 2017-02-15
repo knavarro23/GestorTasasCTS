@@ -5,16 +5,15 @@ using MetroFramework.Forms;
 
 namespace MDIBFGestionTasas.Formularios
 {
-    public partial class FrmPrincipal : MetroForm
+    public partial class FrmPrincipalCts2 : MetroForm
     {
         private FrmProductoCTS _frmProductoCts;
         private FrmIngresoNetoCTS _frmIngresoNetoCts;
         private FrmCargaStockBF _frmCargaStockBf;
-        private FrmProcesoCargaDP _frmProcesoCargaDp;
         private FrmProcesoCargaCTS _frmProcesoCargaCts;
         private FrmSaldoenCuentaCTS _frmSaldoenCuentaCts;
 
-        public FrmPrincipal()
+        public FrmPrincipalCts2()
         {
             InitializeComponent();
         }
@@ -65,19 +64,6 @@ namespace MDIBFGestionTasas.Formularios
             else
             {
                 _frmCargaStockBf.BringToFront();
-            }
-        }
-
-        private void procesoDeCargaDPToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (_frmProcesoCargaDp == null || _frmProcesoCargaDp.IsDisposed)
-            {
-                _frmProcesoCargaDp = new FrmProcesoCargaDP {MdiParent = this};
-                _frmProcesoCargaDp.Show();
-            }
-            else
-            {
-                _frmProcesoCargaDp.BringToFront();
             }
         }
 

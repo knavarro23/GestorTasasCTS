@@ -9,19 +9,10 @@ namespace MDIBFGestionTasas
     {
         FrmCargaStockBF _frmCargaStockBf;
         FrmProcesoCargaDP _frmProcesoCargaDp;
-        FrmProcesoCargaCTS _frmProcesoCargaCts;
-        FrmProductoCTS _frmProductoCts;
-        FrmIngresoNetoCTS _frmIngresoNetoCts;
-        FrmSaldoenCuentaCTS _frmSaldoenCuentaCts;
 
         public frmPrincipal()
         {
             InitializeComponent();
-        }
-
-        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();  
         }
 
         private void procesoDeCargaStockBFToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,56 +41,9 @@ namespace MDIBFGestionTasas
             }
         }
 
-        private void procesoDeCargaCTSToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolMenuSalir_Click(object sender, EventArgs e)
         {
-            if (_frmProcesoCargaCts == null || _frmProcesoCargaCts.IsDisposed)
-            {
-                _frmProcesoCargaCts = new FrmProcesoCargaCTS { MdiParent = this };
-                _frmProcesoCargaCts.Show();
-            }
-            else
-            {
-                _frmProcesoCargaCts.BringToFront();
-            }
+            Application.Exit();
         }
-
-        private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (_frmProductoCts == null || _frmProductoCts.IsDisposed)
-            {
-                _frmProductoCts = new FrmProductoCTS { MdiParent = this };
-                _frmProductoCts.Show();
-            }
-            else
-            {
-                _frmProductoCts.BringToFront();
-            }
-        }
-
-        private void mantenimientoIngresoNetoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (_frmIngresoNetoCts == null || _frmIngresoNetoCts.IsDisposed)
-            {
-                _frmIngresoNetoCts = new FrmIngresoNetoCTS { MdiParent = this };
-                _frmIngresoNetoCts.Show();
-            }
-            else
-            {
-                _frmIngresoNetoCts.BringToFront();
-            }
-        }
-
-        private void mantenimientoSaldoNetoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (_frmSaldoenCuentaCts == null || _frmSaldoenCuentaCts.IsDisposed)
-            {
-                _frmSaldoenCuentaCts = new FrmSaldoenCuentaCTS { MdiParent = this };
-                _frmSaldoenCuentaCts.Show();
-            }
-            else
-            {
-                _frmSaldoenCuentaCts.BringToFront();
-            }
-        }    
     }
 }

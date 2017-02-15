@@ -99,6 +99,12 @@
     <Compile Include="Formularios\FrmIngresoNetoCTS.Designer.cs">
       <DependentUpon>FrmIngresoNetoCTS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmInicioCts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmInicioCts.Designer.cs">
+      <DependentUpon>FrmInicioCts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,11 +117,17 @@
     <Compile Include="Formularios\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmPrincipal.cs">
+    <Compile Include="Formularios\FrmPrincipalCts2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmPrincipal.Designer.cs">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <Compile Include="Formularios\FrmPrincipalCts2.Designer.cs">
+      <DependentUpon>FrmPrincipalCts2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPrincipalCts1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPrincipalCts1.Designer.cs">
+      <DependentUpon>FrmPrincipalCts1.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmProcesoCargaCTS.cs">
       <SubType>Form</SubType>
@@ -174,14 +186,20 @@
     <EmbeddedResource Include="Formularios\FrmIngresoNetoCTS.resx">
       <DependentUpon>FrmIngresoNetoCTS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmInicioCts.resx">
+      <DependentUpon>FrmInicioCts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmPrincipalCts2.resx">
+      <DependentUpon>FrmPrincipalCts2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPrincipalCts1.resx">
+      <DependentUpon>FrmPrincipalCts1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmProcesoCargaCTS.resx">
       <DependentUpon>FrmProcesoCargaCTS.cs</DependentUpon>

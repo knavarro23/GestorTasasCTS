@@ -14,8 +14,8 @@ namespace MDIBFGestionTasas.Formularios
         private void btnTarifario2_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmPrincipal frmPrincipal = new FrmPrincipal();
-            frmPrincipal.Show();
+            FrmInicioCts frmInicioCts = new FrmInicioCts();
+            frmInicioCts.Show();
         }
 
         private void btnTarifario1_Click(object sender, EventArgs e)

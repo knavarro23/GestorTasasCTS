@@ -30,22 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.mnucargainicial = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenimientoIngresoNetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenimientoSaldoNetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesoDeCargaStockBFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesoDeCargaDPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.procesoDeCargaCTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolMenuSalir = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnucargainicial,
             this.procesosToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(20, 60);
             this.menuStrip.Name = "menuStrip";
@@ -53,55 +48,13 @@
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip1";
             // 
-            // mnucargainicial
-            // 
-            this.mnucargainicial.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mantenimientoToolStripMenuItem,
-            this.mantenimientoIngresoNetoToolStripMenuItem,
-            this.mantenimientoSaldoNetoToolStripMenuItem,
-            this.salirToolStripMenuItem1});
-            this.mnucargainicial.Name = "mnucargainicial";
-            this.mnucargainicial.Size = new System.Drawing.Size(101, 20);
-            this.mnucargainicial.Text = "Mantenimiento";
-            // 
-            // mantenimientoToolStripMenuItem
-            // 
-            this.mantenimientoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mantenimientoToolStripMenuItem.Image")));
-            this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
-            this.mantenimientoToolStripMenuItem.Text = "Mantenimiento Producto CTS";
-            this.mantenimientoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem_Click);
-            // 
-            // mantenimientoIngresoNetoToolStripMenuItem
-            // 
-            this.mantenimientoIngresoNetoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mantenimientoIngresoNetoToolStripMenuItem.Image")));
-            this.mantenimientoIngresoNetoToolStripMenuItem.Name = "mantenimientoIngresoNetoToolStripMenuItem";
-            this.mantenimientoIngresoNetoToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
-            this.mantenimientoIngresoNetoToolStripMenuItem.Text = "Mantenimiento Ingreso Neto CTS";
-            this.mantenimientoIngresoNetoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoIngresoNetoToolStripMenuItem_Click);
-            // 
-            // mantenimientoSaldoNetoToolStripMenuItem
-            // 
-            this.mantenimientoSaldoNetoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mantenimientoSaldoNetoToolStripMenuItem.Image")));
-            this.mantenimientoSaldoNetoToolStripMenuItem.Name = "mantenimientoSaldoNetoToolStripMenuItem";
-            this.mantenimientoSaldoNetoToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
-            this.mantenimientoSaldoNetoToolStripMenuItem.Text = "Mantenimiento Saldo en Cuenta CTS";
-            this.mantenimientoSaldoNetoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoSaldoNetoToolStripMenuItem_Click);
-            // 
-            // salirToolStripMenuItem1
-            // 
-            this.salirToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("salirToolStripMenuItem1.Image")));
-            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(269, 22);
-            this.salirToolStripMenuItem1.Text = "Salir";
-            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
-            // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.procesoDeCargaStockBFToolStripMenuItem,
             this.procesoDeCargaDPToolStripMenuItem,
-            this.procesoDeCargaCTSToolStripMenuItem});
+            this.toolStripSeparator1,
+            this.toolMenuSalir});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
             this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.procesosToolStripMenuItem.Text = "Procesos";
@@ -122,13 +75,17 @@
             this.procesoDeCargaDPToolStripMenuItem.Text = "Proceso de Carga DP";
             this.procesoDeCargaDPToolStripMenuItem.Click += new System.EventHandler(this.procesoDeCargaDPToolStripMenuItem_Click);
             // 
-            // procesoDeCargaCTSToolStripMenuItem
+            // toolMenuSalir
             // 
-            this.procesoDeCargaCTSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("procesoDeCargaCTSToolStripMenuItem.Image")));
-            this.procesoDeCargaCTSToolStripMenuItem.Name = "procesoDeCargaCTSToolStripMenuItem";
-            this.procesoDeCargaCTSToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.procesoDeCargaCTSToolStripMenuItem.Text = "Proceso de Carga CTS";
-            this.procesoDeCargaCTSToolStripMenuItem.Click += new System.EventHandler(this.procesoDeCargaCTSToolStripMenuItem_Click);
+            this.toolMenuSalir.Name = "toolMenuSalir";
+            this.toolMenuSalir.Size = new System.Drawing.Size(214, 22);
+            this.toolMenuSalir.Text = "Salir";
+            this.toolMenuSalir.Click += new System.EventHandler(this.toolMenuSalir_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(211, 6);
             // 
             // frmPrincipal
             // 
@@ -140,7 +97,7 @@
             this.IsMdiContainer = true;
             this.Name = "frmPrincipal";
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "GESTIÓN DE CTS y DP";
+            this.Text = "GESTIÓN DEPÓSITO A PLAZO";
             this.TransparencyKey = System.Drawing.Color.Empty;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip.ResumeLayout(false);
@@ -153,14 +110,10 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem mnucargainicial;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem procesosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procesoDeCargaStockBFToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procesoDeCargaDPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem procesoDeCargaCTSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mantenimientoIngresoNetoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mantenimientoSaldoNetoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem toolMenuSalir;
     }
 }
