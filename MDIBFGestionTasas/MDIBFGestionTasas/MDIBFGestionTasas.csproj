@@ -87,6 +87,9 @@
   <ItemGroup>
     <Compile Include="Core\ComboxItem.cs" />
     <Compile Include="Core\Constantes.cs" />
+    <Compile Include="Core\CustomizedToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Formularios\FrmCargaStockBF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,7 +249,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\bancoFalabella.png" />
+    <Content Include="Resources\bancoFalabella.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\share.jpg" />
     <None Include="Resources\CTS.jpg" />
     <None Include="Resources\cts1.jpg" />

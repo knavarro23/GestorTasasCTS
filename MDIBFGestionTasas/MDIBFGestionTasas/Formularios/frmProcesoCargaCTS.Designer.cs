@@ -68,7 +68,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblmensajeproceso = new System.Windows.Forms.Label();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.toolTipGeneral = new MetroFramework.Components.MetroToolTip();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDatosContacto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMigracion)).BeginInit();
@@ -463,12 +462,6 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // toolTipGeneral
-            // 
-            this.toolTipGeneral.Style = MetroFramework.MetroColorStyle.Blue;
-            this.toolTipGeneral.StyleManager = null;
-            this.toolTipGeneral.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
             // FrmProcesoCargaCTS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -531,7 +524,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblmensajeproceso;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private MetroFramework.Components.MetroToolTip toolTipGeneral;
         private System.Windows.Forms.PictureBox ptbCuentaSueldo;
         private System.Windows.Forms.PictureBox ptbDatosContacto;
         private System.Windows.Forms.PictureBox ptbMigracion;
